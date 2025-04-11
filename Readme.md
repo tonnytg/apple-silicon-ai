@@ -31,11 +31,12 @@ python -m pip install tensorflow-metal
 To use Tensorflow to build ML models, you need to install some plugins.
 
 ```
-python -m pip install matplotlib
-python -m pip install numpy
-python -m pip install pandas
-python -m pip install scikit-learn
-python -m pip install statsmodels
+python -m pip install matplotlib     # Plotting and visualization
+python -m pip install numpy          # Numerical operations library
+python -m pip install pandas         # Data analysis toolkit
+python -m pip install scikit-learn   # Machine learning models
+python -m pip install statsmodels    # Statistical modeling tools
+
 ```
 
 # Demo
