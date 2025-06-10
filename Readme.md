@@ -2,29 +2,9 @@
 
 This simple documents will help you to install Tensorflow on Apple Silicon.
 
-Create Environment to isolate packages
+# install
 
-```
-python3 -m venv ~/apple-metal
-```
-
-Activate Environment
-
-```
-source ~/apple-metal/bin/activate
-```
-
-Install Tensorflow
-
-```
-python -m pip install tensorflow
-```
-
-Then, install Metal Converter
-
-```
-python -m pip install tensorflow-metal
-```
+Use setup.sh to install tensorflow in Apple with Metal
 
 ### Plugins
 
@@ -39,8 +19,13 @@ python -m pip install statsmodels    # Statistical modeling tools
 
 ```
 
-# Demo
+# Demos
 
 ```
 python examples/main.py
 ```
+
+
+## Colab to Test 
+
+doc: https://colab.research.google.com/github/skorch-dev/skorch/blob/master/notebooks/MNIST.ipynb#scrollTo=KRtHfgg8_v7u

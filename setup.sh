@@ -1,8 +1,21 @@
-conda create -n base-ai python=3.9
-conda activate base-ai
-conda install -c apple tensorflow-deps
-python -m pip install tensorflow-macos==2.9
-python -m pip install tensorflow-metal
+#!/bin/bash
 
-echo "Running Hello world"
-python main.py
+brew install --cask miniforge
+
+mamba init zsh
+
+eval "$(mamba shell hook --shell zsh)"
+source ~/.zshrc
+
+mamba create -n tf-gpu python=3.11
+
+mamba activate tf-gpu
+
+python3 -m pip install tensorflow
+
+python3 -m pip install tensorflow-metal
+
+python3 -m pip install pandas 
+
+# To connect to jupyter
+# python3 -m pip install jupyter jupyter_http_over_ws tensorflow tensorflow-hub tensorflow-datasets matplotlib
